@@ -1,3 +1,6 @@
 projectName: robot-shop
 appPort: "8080"
 serviceType: ClusterIP
+
+job:
+  enabled: false
