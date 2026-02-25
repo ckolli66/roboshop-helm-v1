@@ -11,8 +11,8 @@ spec:
         project: {{ .Values.projectName }}
     spec:
       restartPolicy: Never
-      {{- range .Values.job.containers }}
       containers:
+      {{- range .Values.job.containers }}
         - name: {{ .name }}
           image: public.ecr.aws/w8x4g9h7/roboshop-v3/schema-load
           env:
