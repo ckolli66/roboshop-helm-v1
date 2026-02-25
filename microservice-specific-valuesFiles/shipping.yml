@@ -1,4 +1,4 @@
-appName: "shipping"
+appName: shipping
 configData:
   CART_ENDPOINT: "cart:8080"
   DB_HOST: "mysql-dev.chanakyakolli.online"

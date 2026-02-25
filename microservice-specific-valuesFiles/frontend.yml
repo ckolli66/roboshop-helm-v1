@@ -1,4 +1,4 @@
-appName: "frontend"
+appName: frontend
 appPort: "80"
 serviceType: LoadBalancer
 configData:

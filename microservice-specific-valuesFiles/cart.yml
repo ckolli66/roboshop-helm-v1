@@ -1,4 +1,4 @@
-appName: "cart"
+appName: cart
 configData:
   CATALOGUE_HOST: "catalogue"
   CATALOGUE_PORT: "8080"

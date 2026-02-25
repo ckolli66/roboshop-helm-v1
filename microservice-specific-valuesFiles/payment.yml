@@ -1,4 +1,4 @@
-appName: "payment"
+appName: payment
 configDate:
   CART_HOST: "cart"
   CART_PORT: "8080"
