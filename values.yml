@@ -1,3 +1,3 @@
 projectName: robot-shop
 appPort: "8080"
-serviceType: ClusterIp
+serviceType: ClusterIP
