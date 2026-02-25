@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: {{ .Values.appName }}
 data:
-  {{ .Values.configData | toYaml | indent 2 }}
+{{ .Values.configData | toYaml | indent 2 }}
