@@ -5,9 +5,11 @@ install:
 	helm upgrade -i payment . -f microservice-specific-valuesFiles/payment.yml
 	helm upgrade -i user . -f microservice-specific-valuesFiles/user.yml
 	helm upgrade -i cart . -f microservice-specific-valuesFiles/cart.yml
+	helm upgrade -i catalogue . -f microservice-specific-valuesFiles/catalogue.yml
 
 uninstall:
 	git pull
+	helm uninstall catalogue
 	helm uninstall frontend
 	helm uninstall shipping
 	helm uninstall payment
