@@ -18,6 +18,11 @@ spec:
         project: {{ .Values.projectName }}
     spec:
       containers:
+        - name: {{ .Values.appName }}
+          image: 444206648334.dkr.ecr.us-east-1.amazonaws.com/{{ .Values.appName }}:latest
+          envFrom:
+            - configMapRef:
+                name: {{ .Values.appName }}
   {{ if eq .Values.appName "frontend" }}
         - name: nginx-exporter
           image: nginx/nginx-prometheus-exporter:latest
@@ -26,8 +31,3 @@ spec:
           ports:
             - containerPort: 9113
   {{ end }}
-        - name: {{ .Values.appName }}
-          image: 444206648334.dkr.ecr.us-east-1.amazonaws.com/{{ .Values.appName }}:latest
-          envFrom:
-            - configMapRef:
-                name: {{ .Values.appName }}
